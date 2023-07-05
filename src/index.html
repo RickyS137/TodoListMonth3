@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .wrapper {
+    width: 100vw;
+    height: 800px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .todos {
+    margin-top: 20px;
+
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+
+    font-size: 22px;
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  input {
+    height: 30px;
+    width: 300px;
+    border: 1px solid aquamarine;
+  }
+  #btn {
+    background: aqua;
+    border: 1px solid saddlebrown;
+    height: 30px;
+    padding: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: chocolate;
+  }
+  button {
+    cursor: pointer;
+  }
+  .todo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 8px;
+    border-bottom: 1px solid black;
+  }
+</style>
+<body>
+  <div class="wrapper">
+    <div class="actions">
+      <input type="text" placeholder="Что вы будете делать сегодня" id="input">
+      <button id="btn">Отправить</button>
+    </div>
+    <div class="todos"></div>
+  </div>
+</body>
+<script src="app.js"></script>
+</html>
